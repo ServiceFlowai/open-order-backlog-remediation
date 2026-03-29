@@ -1,2 +1,19 @@
-:root { color-scheme: light dark; }
-body { margin: 0; font-family: system-ui, sans-serif; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply p-4;
+}
+
+.rules-page, .tasks-page {
+  @apply max-w-4xl mx-auto;
+}
+
+.rule-item, .task-card {
+  @apply p-4 mb-4 bg-white shadow rounded;
+}
+
+button {
+  @apply bg-blue-500 text-white py-1 px-3 rounded;
+}
