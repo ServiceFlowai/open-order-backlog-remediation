@@ -1,16 +1,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import RulesPage from './pages/RulesPage';
-import TasksPage from './pages/TasksPage';
+import Dashboard from './pages/Dashboard';
+import Orders from './pages/Orders';
+import OrderDetail from './pages/OrderDetail';
 
 function App() {
   return (
-    <div className="app">
-      <Routes>
-        <Route path="/rules" element={<RulesPage />} />
-        <Route path="/tasks" element={<TasksPage />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/orders" element={<Orders />} />
+      <Route path="/orders/:id" element={<OrderDetail />} />
+    </Routes>
   );
 }
 
